@@ -1,0 +1,427 @@
+$color-neutral-primary: #4F4F4F;
+$color-neutral-secondary: #9D9D9D;
+
+$color-main-primary: #D56EF5;
+$color-main-primary-hover: #e088fb;
+$color-main-secondary: #FFE600;
+
+$background-color-before-image: #F2A597;
+$background-color-journal: #FFEDF7;
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-container {
+    background-color: white;
+    .nav-wrapper-container-size {
+        max-width: 1550px;
+        margin-left: auto;
+        margin-right: auto;
+        .nav-wrapper {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            justify-content: space-between;
+            padding: 0 40px;
+            .nav-logo {
+                .menu-burger {
+                    display: none;
+                }
+                .cc-logo {
+                    padding: 26px 0 32px 0;
+                }
+            }
+            .nav-menu {
+                ul.menu-list {
+                    list-style-type: none;
+                    padding-left: 0;
+                    display: flex;
+                    gap: 34px;
+                    li.list-item {
+                        .item-wrapper {
+                            display: flex;
+                            gap: 8px;
+                            a {
+                                text-decoration: none;
+                                font-size: 20px;
+                                color: $color-neutral-primary;
+                                .arrow {
+                                    fill: $color-neutral-secondary;
+                                }
+                            }
+                            a:hover {
+                                color: $color-main-primary;
+                                .arrow {
+                                    fill: $color-main-primary;
+                                }
+                            }
+                            
+                            
+                        }
+                        a {
+                            text-decoration: none;
+                            font-size: 20px;
+                            color: $color-neutral-primary;
+                        }
+                        a:hover {
+                            color: $color-main-primary;
+                        }
+                    }
+                }
+            }
+            .nav-icons {
+                display: flex;
+                gap: 20px;
+                a.icons-link {
+                    svg {
+                        fill: $color-neutral-primary;
+                    }
+                    svg:hover {
+                        fill: $color-main-primary;
+                    }
+                    
+                }
+
+                .item-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    a.en-link {
+                        text-decoration: none;
+                        .language-item {
+                            font-size: 20px;
+                            color: $color-neutral-primary;
+                        }
+                        .arrow {
+                            fill: $color-neutral-secondary;
+                        }
+                    }
+                    a.en-link:hover {
+                        .language-item {
+                            color: $color-main-primary;
+                        }
+                        .arrow {
+                            fill: $color-main-primary;
+                        }
+                    }
+                    
+                }     
+            }
+        }
+    }    
+}
+
+.main-container {
+    .main-wrapper-container-size {
+        font-family: 'Poppins', sans-serif;
+        
+        .hero-box-container {
+            background-color: $background-color-before-image;
+            background-image: url(./images/hero-box-image-2.png);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            .hero-box-wrapper {
+                max-width: 1550px;
+                margin-left: auto;
+                margin-right: auto;
+                .hero-box-content-wrapper {
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    padding: 352px 20px 200px;
+                    .content-text-wrapper {
+                        .hero-box-header {
+                            font-size: 96px;
+                            font-weight: 500;
+                            font-family: 'Advent Pro', sans-serif;
+                            color: white;
+                            margin: 0;
+                        }
+                        .hero-box-description {
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $color-main-primary;
+                            margin: 5px;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                    }
+                    .hero-box-button {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: white;
+                        padding: 21px 43px;
+                        background-color: $color-main-primary;
+                        margin-top: 43px;
+                        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+                        letter-spacing: 1px;
+                    }
+                    .hero-box-button:hover {
+                        background-color: $color-main-primary-hover;
+                    }
+                }
+            }
+        }
+
+        .shop-container {
+            .shop-wrapper {
+                .shop-content-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 53px 0 100px;
+                    .shop-title-wrapper {
+                        text-align: center;
+                        max-width: 665px;
+                        margin-bottom: 57px;
+                        .shop-header {
+                            color: $color-main-primary;
+                            font-size: 27px;
+                            font-weight: 500;
+                            margin: 0 0 16px;
+                        }
+                        .shop-description {
+                            color: $color-neutral-primary;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 1.5;
+                            .pink-text {
+                                color: $color-main-primary;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .shop-products-wrapper {
+                        display: flex;
+                        gap: 61px;
+                        padding: 0 0 75px;
+                        .product {
+                            width: 245px;
+                            a.product-link {
+                                text-decoration: none;
+                                .photo-wrapper {
+                                    position: relative;
+                                    .product-photo {
+                                        display: flex;
+                                    }
+                                    .heart-icon {
+                                        position: absolute;
+                                        right: 0; top: 0;
+                                        fill: $color-neutral-primary;
+                                    }
+                                }
+                                .description-wrapper {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    .desription-title {
+                                        font-family: 'Advent Pro', sans-serif;
+                                        color: $color-neutral-primary;
+                                        font-weight: 500;
+                                        font-size: 22px;
+                                        margin: 16px 0 8px;
+                                    }
+                                    .description-description {
+                                        color: $color-neutral-secondary;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 1.4;
+                                        text-align: center;
+                                        margin: 0 0 15px;
+                                    }
+                                    .description-price {
+                                        color: black;
+                                        font-size: 16px;
+                                        font-weight: 500;
+    
+                                    }
+                                }
+                            }
+                        }
+                        .product:hover {
+                            a.product-link {
+                                .photo-wrapper {
+                                    .heart-icon {
+                                        fill: $color-main-primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .shop-button-wrapper {
+                        position: relative;
+                        a.button-link {
+                            text-decoration: none;
+                            img {
+                                position: absolute;
+                                left: 0; top: 0;
+                                transform: translate(-28%, -35%);
+                                z-index: -10;
+                            }
+                            .shop-button-text {
+                                color: black;
+                            }
+                        }
+                        a.button-link:hover {
+                            .shop-button-text {
+                                color: $color-main-primary;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+        .about-container {
+            background-color: $background-color-journal;
+            .about-wrapper {
+                max-width: 1310px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                .pink-clouds {
+                    position: absolute;
+                    left: -33%; bottom: -15%;
+                    z-index: 100;
+                }
+                .about-content-wrapper {
+                    padding: 85px 0 206px;
+                    .about-title-wrapper {
+                        width: 783px;
+                        margin-bottom: 57px;
+                        padding: 0 0 0 40px;
+                        .about-header {
+                            color: $color-neutral-primary;
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+                        .about-description {
+                            color: $color-neutral-secondary;
+                            font-size: 15px;
+                            padding-left: 30px;
+                        }
+                    }
+                    .about-themes-wrapper {
+                        display: flex;
+                        gap: 54px;
+                        justify-content: center;
+                        .theme {
+                            width: 353px;
+                            a.theme-link {
+                                text-decoration: none;
+                                .photo-wrapper {
+                                    .about-photo {
+                                        display: flex;
+                                    }
+                                }
+                                .description-wrapper {
+                                    .desription-title {
+                                        text-transform: uppercase;
+                                        font-family: 'Advent Pro', sans-serif;
+                                        color: $color-neutral-primary;
+                                        font-weight: 500;
+                                        font-size: 22px;
+                                        margin: 16px 0 8px;
+
+                                    }
+                                    .description-description {
+                                        color: $color-neutral-secondary;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 1.4;
+                                        margin: 0 0 15px;
+                                    }
+                                }
+                            }
+                            a.theme-link:hover {
+                                .description-wrapper {
+                                    .desription-title {
+                                        color: $color-main-primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .about-link-wrapper {
+                        a.about-link {
+                            text-decoration: none;
+                            display: flex;
+                            gap: 25px;
+                            align-items: center;
+                            justify-content: flex-end;
+                            padding: 27px 40px 0 0;
+                            .about-text {
+                                text-transform: uppercase;
+                                font-size: 22px;
+                                color: $color-neutral-secondary;
+                            }
+                            .arrow-right {
+                                fill: $color-neutral-secondary;
+                            }
+                        }
+                        a.about-link:hover {
+                            .about-text {
+                                color: $color-main-primary;
+                            }
+                            .arrow-right {
+                                fill: $color-main-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .gold-digger-container {
+            background-image: url(./images/denim.png);
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+            .gold-digger-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .gold-digger-content-wrapper {
+                    padding: 150px 0 200px;
+                    .gold-digger-text-wrapper {
+                        width: 576px;
+                        text-align: center;
+                        .gold-digger-title {
+                            font-family: 'Advent Pro', sans-serif;
+                            font-size: 36px;
+                            font-weight: 600;
+                            color: $color-main-secondary;
+                            margin-bottom: 41px;
+                        }
+                        .gold-digger-description {
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: white;
+                        }
+                    }
+                    a.gold-digger-button {
+                        color: black;
+                        font-weight: 500;
+                        text-decoration: none;
+                        background-color: white;
+                        padding: 13px 44px 15px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+}

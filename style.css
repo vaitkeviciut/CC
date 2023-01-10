@@ -1,0 +1,367 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav-container {
+  background-color: white;
+}
+.nav-container .nav-wrapper-container-size {
+  max-width: 1550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-logo .menu-burger {
+  display: none;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-logo .cc-logo {
+  padding: 26px 0 32px 0;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 34px;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item .item-wrapper {
+  display: flex;
+  gap: 8px;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item .item-wrapper a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #4F4F4F;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item .item-wrapper a .arrow {
+  fill: #9D9D9D;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item .item-wrapper a:hover {
+  color: #D56EF5;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item .item-wrapper a:hover .arrow {
+  fill: #D56EF5;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #4F4F4F;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-menu ul.menu-list li.list-item a:hover {
+  color: #D56EF5;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons {
+  display: flex;
+  gap: 20px;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons a.icons-link svg {
+  fill: #4F4F4F;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons a.icons-link svg:hover {
+  fill: #D56EF5;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons .item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons .item-wrapper a.en-link {
+  text-decoration: none;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons .item-wrapper a.en-link .language-item {
+  font-size: 20px;
+  color: #4F4F4F;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons .item-wrapper a.en-link .arrow {
+  fill: #9D9D9D;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons .item-wrapper a.en-link:hover .language-item {
+  color: #D56EF5;
+}
+.nav-container .nav-wrapper-container-size .nav-wrapper .nav-icons .item-wrapper a.en-link:hover .arrow {
+  fill: #D56EF5;
+}
+
+.main-container .main-wrapper-container-size {
+  font-family: "Poppins", sans-serif;
+}
+.main-container .main-wrapper-container-size .hero-box-container {
+  background-color: #F2A597;
+  background-image: url(./images/hero-box-image-2.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.main-container .main-wrapper-container-size .hero-box-container .hero-box-wrapper {
+  max-width: 1550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container .main-wrapper-container-size .hero-box-container .hero-box-wrapper .hero-box-content-wrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 352px 20px 200px;
+}
+.main-container .main-wrapper-container-size .hero-box-container .hero-box-wrapper .hero-box-content-wrapper .content-text-wrapper .hero-box-header {
+  font-size: 96px;
+  font-weight: 500;
+  font-family: "Advent Pro", sans-serif;
+  color: white;
+  margin: 0;
+}
+.main-container .main-wrapper-container-size .hero-box-container .hero-box-wrapper .hero-box-content-wrapper .content-text-wrapper .hero-box-description {
+  font-size: 20px;
+  font-weight: 500;
+  color: #D56EF5;
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-container .main-wrapper-container-size .hero-box-container .hero-box-wrapper .hero-box-content-wrapper .hero-box-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 21px 43px;
+  background-color: #D56EF5;
+  margin-top: 43px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+.main-container .main-wrapper-container-size .hero-box-container .hero-box-wrapper .hero-box-content-wrapper .hero-box-button:hover {
+  background-color: #e088fb;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 53px 0 100px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-title-wrapper {
+  text-align: center;
+  max-width: 665px;
+  margin-bottom: 57px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-title-wrapper .shop-header {
+  color: #D56EF5;
+  font-size: 27px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-title-wrapper .shop-description {
+  color: #4F4F4F;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-title-wrapper .shop-description .pink-text {
+  color: #D56EF5;
+  font-weight: 600;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper {
+  display: flex;
+  gap: 61px;
+  padding: 0 0 75px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product {
+  width: 245px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link {
+  text-decoration: none;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .photo-wrapper {
+  position: relative;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .photo-wrapper .product-photo {
+  display: flex;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .photo-wrapper .heart-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  fill: #4F4F4F;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .description-wrapper .desription-title {
+  font-family: "Advent Pro", sans-serif;
+  color: #4F4F4F;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 16px 0 8px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .description-wrapper .description-description {
+  color: #9D9D9D;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 0 15px;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product a.product-link .description-wrapper .description-price {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-products-wrapper .product:hover a.product-link .photo-wrapper .heart-icon {
+  fill: #D56EF5;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-button-wrapper {
+  position: relative;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-button-wrapper a.button-link {
+  text-decoration: none;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-button-wrapper a.button-link img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-28%, -35%);
+  z-index: -10;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-button-wrapper a.button-link .shop-button-text {
+  color: black;
+}
+.main-container .main-wrapper-container-size .shop-container .shop-wrapper .shop-content-wrapper .shop-button-wrapper a.button-link:hover .shop-button-text {
+  color: #D56EF5;
+}
+.main-container .main-wrapper-container-size .about-container {
+  background-color: #FFEDF7;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper {
+  max-width: 1310px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .pink-clouds {
+  position: absolute;
+  left: -33%;
+  bottom: -15%;
+  z-index: 100;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper {
+  padding: 85px 0 206px;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-title-wrapper {
+  width: 783px;
+  margin-bottom: 57px;
+  padding: 0 0 0 40px;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-title-wrapper .about-header {
+  color: #4F4F4F;
+  font-size: 22px;
+  font-weight: 500;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-title-wrapper .about-description {
+  color: #9D9D9D;
+  font-size: 15px;
+  padding-left: 30px;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper {
+  display: flex;
+  gap: 54px;
+  justify-content: center;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper .theme {
+  width: 353px;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper .theme a.theme-link {
+  text-decoration: none;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper .theme a.theme-link .photo-wrapper .about-photo {
+  display: flex;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper .theme a.theme-link .description-wrapper .desription-title {
+  text-transform: uppercase;
+  font-family: "Advent Pro", sans-serif;
+  color: #4F4F4F;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 16px 0 8px;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper .theme a.theme-link .description-wrapper .description-description {
+  color: #9D9D9D;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-themes-wrapper .theme a.theme-link:hover .description-wrapper .desription-title {
+  color: #D56EF5;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-link-wrapper a.about-link {
+  text-decoration: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 27px 40px 0 0;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-link-wrapper a.about-link .about-text {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #9D9D9D;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-link-wrapper a.about-link .arrow-right {
+  fill: #9D9D9D;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-link-wrapper a.about-link:hover .about-text {
+  color: #D56EF5;
+}
+.main-container .main-wrapper-container-size .about-container .about-wrapper .about-content-wrapper .about-link-wrapper a.about-link:hover .arrow-right {
+  fill: #D56EF5;
+}
+.main-container .main-wrapper-container-size .gold-digger-container {
+  background-image: url(./images/denim.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+.main-container .main-wrapper-container-size .gold-digger-container .gold-digger-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-wrapper-container-size .gold-digger-container .gold-digger-wrapper .gold-digger-content-wrapper {
+  padding: 150px 0 200px;
+}
+.main-container .main-wrapper-container-size .gold-digger-container .gold-digger-wrapper .gold-digger-content-wrapper .gold-digger-text-wrapper {
+  width: 576px;
+  text-align: center;
+}
+.main-container .main-wrapper-container-size .gold-digger-container .gold-digger-wrapper .gold-digger-content-wrapper .gold-digger-text-wrapper .gold-digger-title {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #FFE600;
+  margin-bottom: 41px;
+}
+.main-container .main-wrapper-container-size .gold-digger-container .gold-digger-wrapper .gold-digger-content-wrapper .gold-digger-text-wrapper .gold-digger-description {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+.main-container .main-wrapper-container-size .gold-digger-container .gold-digger-wrapper .gold-digger-content-wrapper a.gold-digger-button {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  padding: 13px 44px 15px;
+  border-radius: 50px;
+}/*# sourceMappingURL=style.css.map */
